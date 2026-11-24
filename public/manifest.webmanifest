@@ -1,0 +1,14 @@
+{
+  "name": "Run Tempo — เมโทรนอมวิ่ง",
+  "short_name": "Run Tempo",
+  "description": "เมโทรนอมสำหรับวิ่ง ปรับเพซและจังหวะก้าวได้ตามต้องการ",
+  "lang": "th",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f8f9f8",
+  "theme_color": "#f8f9f8",
+  "icons": [
+    { "src": "./icons/shoe.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

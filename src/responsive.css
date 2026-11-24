@@ -1,0 +1,152 @@
+/* Responsive layout refinements for compact phones, tablets, and desktop. */
+.app-shell {
+  width: min(calc(100% - 32px), 480px);
+  padding-top: clamp(16px, 3vh, 28px);
+  padding-bottom: max(32px, env(safe-area-inset-bottom));
+}
+
+.pace-number > span {
+  font-size: clamp(54px, 15vw, 68px);
+}
+
+.step-button,
+.round-button,
+.tone-chip,
+.text-button,
+.table-button,
+.start-button {
+  touch-action: manipulation;
+}
+
+.volume-row .range {
+  min-width: 48px;
+}
+
+@media (min-width: 760px) {
+  .app-shell {
+    width: min(calc(100% - 64px), 1040px);
+    padding-top: 28px;
+  }
+
+  .brand {
+    font-size: 12px;
+  }
+
+  .shoe-logo {
+    width: 42px;
+    height: 42px;
+  }
+
+  .intro {
+    padding: 18px 0 26px;
+  }
+
+  .intro h1 {
+    font-size: clamp(28px, 3vw, 36px);
+  }
+
+  .intro-copy {
+    font-size: 14px;
+  }
+
+  .control-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+    align-items: stretch;
+    gap: clamp(16px, 2.4vw, 26px);
+  }
+
+  .pace-card {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(24px, 3.5vw, 42px);
+  }
+
+  .pace-number > span {
+    font-size: clamp(70px, 8vw, 96px);
+  }
+
+  .pace-number small {
+    font-size: 14px;
+  }
+
+  .side-controls {
+    display: grid;
+    align-content: center;
+    gap: 16px;
+  }
+
+  .bpm-card,
+  .sound-card {
+    margin-top: 0;
+    padding: clamp(18px, 2vw, 24px);
+  }
+
+  .run-actions {
+    display: grid;
+    width: min(100%, 720px);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 12px;
+    margin: 20px auto 0;
+  }
+
+  .run-actions .start-button,
+  .run-actions .table-button {
+    height: 54px;
+    margin-top: 0;
+  }
+
+  .playing-status,
+  .error-message,
+  .background-note {
+    grid-column: 1 / -1;
+  }
+
+  .playing-status {
+    margin-top: 2px;
+  }
+
+  .background-note {
+    margin-top: 0;
+    font-size: 11px;
+  }
+
+  footer {
+    margin-top: 28px;
+  }
+
+  .dialog {
+    width: min(100%, 560px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .control-grid {
+    gap: 30px;
+  }
+
+  .side-controls {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 359px) {
+  .app-shell {
+    width: calc(100% - 24px);
+  }
+
+  .pace-card {
+    padding-inline: 15px;
+  }
+
+  .step-button {
+    min-width: 104px;
+  }
+
+  .volume-row {
+    gap: 7px;
+  }
+}
